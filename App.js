@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   Platform,
@@ -11,6 +5,24 @@ import {
   Text,
   View
 } from 'react-native';
+import Button from 'components/Button';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10
+  },
+  instructions: {
+    textAlign: 'center',
+    marginBottom: 5
+  },
+});
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -19,39 +31,23 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-export default class App extends Component<{}> {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
+          Welcome to React Native!</Text>
         <Text style={styles.instructions}>
           To get started, edit App.js
         </Text>
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Button
+          title="Show Log"
+          onPress={() => console.log('Boom~')}
+        />
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
