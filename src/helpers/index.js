@@ -1,4 +1,4 @@
 /* eslint-disable */
-import colors from 'helpers/colors';
+import money from 'helpers/money';
 
-export { colors };
+export { money };

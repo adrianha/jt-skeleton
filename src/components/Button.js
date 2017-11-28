@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { colors } from 'helpers';
+import { colors, metrics } from 'themes';
 
 const styles = StyleSheet.create({
   button: {
     backgroundColor: colors.blue,
-    padding: 10,
+    padding: metrics.baseMargin,
     alignItems: 'center',
-    borderRadius: 10
+    borderRadius: metrics.baseMargin
   },
   title: {
     color: colors.white

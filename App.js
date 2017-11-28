@@ -6,6 +6,7 @@ import {
   View
 } from 'react-native';
 import Button from 'components/Button';
+import { money } from 'helpers';
 
 const styles = StyleSheet.create({
   container: {
@@ -38,7 +39,7 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!</Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          Formatted by `helpers/money`: {money.format(`1,000,000`)}
         </Text>
         <Text style={styles.instructions}>
           {instructions}
