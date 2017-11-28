@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, Text } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { colors } from 'helpers';
+
+const styles = StyleSheet.create({
+  button: {
+    backgroundColor: colors.blue,
+    padding: 10,
+    alignItems: 'center',
+    borderRadius: 10
+  },
+  title: {
+    color: colors.white
+  }
+});
 
 class Button extends Component {
   static defaultProps = {
@@ -19,19 +31,10 @@ class Button extends Component {
 
     return (
       <TouchableOpacity
-        style={{
-          backgroundColor: colors.blue,
-          padding: 10,
-          alignItems: 'center',
-          borderRadius: 10
-        }}
+        style={styles.button}
         onPress={this.handlePress}
       >
-        <Text
-          style={{
-            color: colors.white
-          }}
-        >
+        <Text style={styles.title}>
           {title}
         </Text>
       </TouchableOpacity>
