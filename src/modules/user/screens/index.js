@@ -1,3 +1,5 @@
-import UserList from './UserList';
+import LogIn from './LogIn';
+import Profile from './Profile';
+import SignUp from './SignUp';
 
-export default { UserList };
+export default { LogIn, Profile, SignUp };

@@ -30,13 +30,8 @@ class Button extends Component {
     const { title } = this.props;
 
     return (
-      <TouchableOpacity
-        style={styles.button}
-        onPress={this.handlePress}
-      >
-        <Text style={styles.title}>
-          {title}
-        </Text>
+      <TouchableOpacity style={styles.button} onPress={this.handlePress}>
+        <Text style={styles.title}>{title}</Text>
       </TouchableOpacity>
     );
   }

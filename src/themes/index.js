@@ -1,5 +1,5 @@
 /* eslint-disable */
-import colors from 'themes/colors';
-import metrics from 'themes/metrics';
+import colors from './colors';
+import metrics from './metrics';
 
 export { colors, metrics };

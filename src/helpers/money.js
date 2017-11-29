@@ -1,3 +1,3 @@
-const format = (m) => `IDR ${m}`;
+const format = m => `IDR ${m}`;
 
 export default { format };

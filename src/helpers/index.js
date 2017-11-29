@@ -1,4 +1,4 @@
 /* eslint-disable */
-import money from 'helpers/money';
+import money from './money';
 
 export { money };
